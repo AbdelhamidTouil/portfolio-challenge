@@ -1,1 +1,147 @@
-h1{color: aqua;}
+.at{color: #FF4D00;
+    font-size: 5ch;
+    
+
+}
+
+.header ul {display: flex;
+flex-direction: row;
+justify-content:space-around;
+background-color: #F2F2F2;
+height: 50px;
+}
+ul{padding-top: 30px;}
+ul a {text-decoration: none;}
+li{list-style: none;}
+.titre
+{
+font-size: 20ch;
+font-family: "impact";
+color:gainsboro;
+text-shadow: 20px 20px 20px  rgb(77, 122, 190);
+margin-left: 15%;
+max-width: 100%;
+}
+
+.profil{display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+img{width: 50%;}
+.submit{display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.submit button{border-radius: 30px;border-color: blue; width: 25ch;
+height: 6ch; background-color: white; font-size: 2ch; font-weight:bold;
+}
+
+ a:hover button{background-color: blue; color: white;}
+ .footer
+ {
+     display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+background-color:#F2F2F2 ;
+height: 120px;margin-top: 10ch;
+padding-top: 20px;
+padding-bottom: 20px;
+max-width: 100%;
+}
+.copirate{display: flex;
+    flex-direction: row;
+    justify-content:flex-end;align-items: flex-end;
+
+}
+     .links {
+        display: flex;
+        justify-content: flex-end;
+       
+    }
+    .links a{ display: inline-flex;
+        align-items: center;
+        justify-content: center;
+   
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        border: 2px solid rgb(27, 12, 243);
+        color: blue;
+    }
+ 
+        .links a:hover{background-color: blue; color: white;}
+        .social{margin-left: 50px;}
+        .item1-phone{font-size: 3ch;}
+        .item1-servise{font-size: 3ch;}
+
+/****************************************skills******************************************************/
+.logos{width: 50px; height: 50px;}
+.parentImages
+{
+    display: grid;
+    grid-template-columns: 400px 400px ;
+    justify-content: center;
+}
+  .htmlIcon{font-size: 5ch;margin-left: 60px;}
+/****************************************contacts*****************************************************/
+  .Contact-Me{display:flex;
+flex-direction: row;
+justify-content: center;
+font-size: 4ch;}
+.map img
+{
+    width:30%; margin-left: 20%;
+}
+.information
+{
+    margin-left: 50%;
+    position: fixed;top:30%;
+  
+}
+
+.message input{height: 22ch;margin-top: 15px; width: 50ch;}
+.email input{height: 50px;position: fixed;top:30%;}
+.name input{height: 50px; margin-left: 200px;}
+.b1{display: flex; flex-direction: row;justify-content: center;margin-top: 40px;}
+button{background-color: white; width: 150px; height: 60px; border-radius: 30px; border-color: blue;}
+button:hover{background-color: blue;color: white;}
+/****************************************contacts*****************************************************/
+
+
+.containerP{display:grid;
+margin-left: 20%;
+grid-template-columns: 500px 500px;
+justify-content: center;
+
+}
+
+.thurthProject{margin-left: 40%; width: max-content;margin-top: 20px;}
+.clickher button{width: 15ch; height: 5ch;margin-top: 30px;}
+.description2{max-width: 220px;}
+.b1{margin-left: 30px;padding: 10px;}
+.b2{margin-left: 40px;}
+.b3{margin-left: 70px;}
+/****************************************Mobile*****************************************************/
+nav{display: flex;
+flex-direction: row;}
+
+@media screen and (max-width: 375px) 
+{
+    body{background-color: cyan;padding: 0;margin: 0;}
+    .titre{font-size:5ch; margin-left: 5ch;margin-top: 5ch;}
+    .prof{width:350px; margin-left: 8ch;margin-top: 5ch;}
+    .links a{border-style: none;}
+    header{width: 46ch;}
+    .submit{margin-left: 10ch;margin-top: 10ch;}
+   
+    footer .links{max-width: 50px;margin-top: 20px;}
+     .item1-servise{font-size: 2ch;}
+     .item1-phone{font-size: 2ch;}
+     footer{padding-bottom: 20px;}
+     .links a{border-radius: 0%;border-style: none;}
+
+
+}
+    
+ 
+

@@ -23,11 +23,12 @@ Les designs ont été créés dans les largeurs (widths) suivantes:
 
 ### Body
 
-- Family: Mettez le lien du font utilisée avec son nom
+- Family:  link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"
+
 - Weights: mettez les weights utilisées
 
 ## Icons
 
 Pour les icônes du réseaux sociaux, vous pouvez utiliser une bibliothèque d'icônes de polices.
 
-- [Font Awesome](https://fontawesome.com/)
+- Icons:  link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" 

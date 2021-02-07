@@ -1,27 +1,357 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio (Abdelhamid touil)</title>
-	<link rel="stylesheet" href="style/styles.css">
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--respensive desine-->
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"><!--font family-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"><!--for icons-->
+	<link rel="stylesheet" href="style.css"><!--for Css-->
+    <style>
+
+
+* {
+  font-family: Open Sans;  /*****fon family*****/
+}
+body{margin: 0;}
+
+
+
+.footer-distributed{
+	background: rgb(97, 88, 88);
+	box-sizing: border-box;
+	width: 100%;
+
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+
+}
+
+.footer-distributed .footer-links a{
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+
+	font-weight: normal;
+	font-size:30x;
+
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;
+}
+
+
+
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 23%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+
+
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+/***************************************************header*****************************************************/
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+/************************************************ section ************************************/
+
+.titre{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size:10ch;
+    }
+    .profile{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+            }
+      .my-resume{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+              }
+              .my-resume button{
+                width: 20%;
+                height: 40px;
+              }
+              button:hover{background-color: blue;color: white;}
+/************************************************ Media Queries ************************************/
+ 
+@media (max-width:375px) {
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+
+
+        /***********header***************/
+        
+        .header a {
+    
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+/**************************section************************/
+  .titre{font-size: 4ch;}
+  .profile img{width:80%;}
+ 
+       
+}
+    </style>
+    <!-------------------------------code HTML--------------------------------------->
+	
 </head>
-<body>
-    <header>
-	<ul>
-        <h1 class="at">AT</h1>
-<li><a href="#"> Homme</a></li>
-<li><a href="#">Projects</a></li>
-<li><a href="#">skills</a></li>
-<li><a href="#">Contacts</a></li>
-    </ul>
-	</header>
-	
-	
-	<footer>
-	
-	
-	
-	</footer>
-</body>
+ 
+	<body>
+
+<!-------------------------------header--------------------------------------->
+<div class="header">
+    <a href="#default" class="logo">AT</a>
+    
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#contact">Projects</a>
+      <a href="#about">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <!--------------------section------------------------------------------------->
+  <h1 class="titre">I'm a devloper</h1>
+  <div class="profile"><img src="we.PNG"></div>
+  <div class="my-resume"><button>My resume</button></div>
+  <!------------------------footer--------------------------------------------->
+		
+	<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>AT</h3>
+
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        
+        <a href="#">Projects</a>
+      
+        <a href="#">Skills</a>
+        
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Abdelhamid Touil ©2020</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Hay Salam</span> Oujda</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+212 627433447</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">abdelhamidtouil59@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About me</span>
+        Hi! i'm a devloper full stack.
+      </p>
+
+      <div class="footer-icons">
+
+        
+         
+              <a href="#">
+                  <i class="fab fa-facebook-f"></i></a>
+         
+              <a href="#">
+                  <i class="fab fa-linkedin"></i></a>
+         
+              <a href="#">
+                  <i class="fab fa-youtube"></i></a>
+        
+              <a href="#">
+                  <i class="fab fa-github"></i></a>
+        
+              <a href="#">
+                  <i class="fab fa-twitter"></i></a>
+         
+              <a href="#">
+                  <i class="fab fa-instagram"></i></a>
+         
+      
+
+      </div>
+
+    </div>
+
+  </footer>
+ 
+	</body>
+ 
 </html>
