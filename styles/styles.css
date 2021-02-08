@@ -1,147 +1,502 @@
-.at{color: #FF4D00;
-    font-size: 5ch;
-    
 
-}
-
-.header ul {display: flex;
-flex-direction: row;
-justify-content:space-around;
-background-color: #F2F2F2;
-height: 50px;
-}
-ul{padding-top: 30px;}
-ul a {text-decoration: none;}
-li{list-style: none;}
-.titre
-{
-font-size: 20ch;
-font-family: "impact";
-color:gainsboro;
-text-shadow: 20px 20px 20px  rgb(77, 122, 190);
-margin-left: 15%;
-max-width: 100%;
+/******************************************************************HEADER and Footer********************************************************************/
+* {
+  font-family: Open Sans;  /*****fon family*****/
 }
 
-.profil{display: flex;
-    flex-direction: row;
-    justify-content:center;
-}
-img{width: 50%;}
-.submit{display: flex;
-    flex-direction: row;
-    justify-content:center;
-}
-.submit button{border-radius: 30px;border-color: blue; width: 25ch;
-height: 6ch; background-color: white; font-size: 2ch; font-weight:bold;
+body{margin: 0;}
+
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
 }
 
- a:hover button{background-color: blue; color: white;}
- .footer
- {
-     display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-background-color:#F2F2F2 ;
-height: 120px;margin-top: 10ch;
-padding-top: 20px;
-padding-bottom: 20px;
-max-width: 100%;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	
 }
-.copirate{display: flex;
-    flex-direction: row;
-    justify-content:flex-end;align-items: flex-end;
 
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
 }
-     .links {
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+/***************************************************header*****************************************************/
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+
+/********************************************section homme************************************/
+.devloper{
         display: flex;
-        justify-content: flex-end;
-       
-    }
-    .links a{ display: inline-flex;
-        align-items: center;
+        flex-direction: row;
         justify-content: center;
-   
-        height: 50px;
-        width: 50px;
-        border-radius: 50px;
-        border: 2px solid rgb(27, 12, 243);
-        color: blue;
-    }
- 
-        .links a:hover{background-color: blue; color: white;}
-        .social{margin-left: 50px;}
-        .item1-phone{font-size: 3ch;}
-        .item1-servise{font-size: 3ch;}
+        font-size:15ch;
+				color: white;
+				font-size: 16vw;
+				text-align: center;
+				text-transform: uppercase;
+				text-shadow: 10px 18px 35px rgba(88,88,88,.23);
+        margin-bottom: 10%;
+        margin-top: 10%;
+      }
+ .profile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+         }
+      .my-resume{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       margin-bottom: 15ch;
+       margin-top: 30px;
+       
+                }
+              .my-resume button
+              {
+                width: 20%;
+                height: 40px;
+                background-color: white;
+                border-radius: 20%;
+                border-color: blue;
+                
+              }
+              button:hover{background-color: blue;color: white;}
 
-/****************************************skills******************************************************/
-.logos{width: 50px; height: 50px;}
+
+/************************************************ section Skills ************************************/
+.logos{width: 50px; height: 50px;margin-top: 40px;}
 .parentImages
 {
     display: grid;
     grid-template-columns: 400px 400px ;
     justify-content: center;
+    margin-top: 40px;margin-bottom: 10ch;
 }
-  .htmlIcon{font-size: 5ch;margin-left: 60px;}
-/****************************************contacts*****************************************************/
-  .Contact-Me{display:flex;
+
+  .htmlIcon{font-size: 4ch;margin-left: 60px;}
+  .Skills{margin-left: 40%; }
+  .Skills h1{font-size: 5ch;}
+  /********************************************section projects************************************/
+  .Myproject{display: flex;
+justify-content: center; margin-top: 8%; font-size: 2ch;}
+.Myproject h1{background-color: whitesmoke;}
+
+.div1 button{ margin-left: 30% }
+.div2 button{margin-left: 40%}
+.div3 button{margin-left: 55%}
+.div3{ grid-column-start: 1; grid-column-end: 3;margin-left: 50%;}
+
+.divp{
+    display: grid; 
+    grid-template-columns: 40ch  10ch 40ch 40ch;
+    justify-content: center;
+    margin-left: 30%;margin-top: 10%;
+}
+
+.divp img{width: 40ch;height: 35ch;}
+.divp button{margin-top: 10%;
+margin-bottom: 10%;
+border-radius: 20%; width: 30% ;background-color: white;color: blue;}
+button:hover{background-color: blue;color: white;}
+.div3 button{margin-bottom: 20ch;}
+   /********************************************section contact************************************/
+
+
+
+
+
+
+
+.Contact-Me{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+.gridContact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 180px;
+}
+.map{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.message{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin-top:15px;
+}
+.map{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.name input{height: 50px;}
+.email input{height: 50px;}
+.message input{width: 387px; height: 200px;}
+
+
+.b1 {display: flex;
 flex-direction: row;
 justify-content: center;
-font-size: 4ch;}
-.map img
-{
-    width:30%; margin-left: 20%;
+margin-top: 20px;
+margin-bottom:50px;
 }
-.information
-{
-    margin-left: 50%;
-    position: fixed;top:30%;
-  
-}
+ .b1 button{width: 20%;height: 50px;border-radius: 50px;}
+.b1 button:hover{background-color:dodgerblue ;}
 
-.message input{height: 22ch;margin-top: 15px; width: 50ch;}
-.email input{height: 50px;position: fixed;top:30%;}
-.name input{height: 50px; margin-left: 200px;}
-.b1{display: flex; flex-direction: row;justify-content: center;margin-top: 40px;}
-button{background-color: white; width: 150px; height: 60px; border-radius: 30px; border-color: blue;}
-button:hover{background-color: blue;color: white;}
-/****************************************contacts*****************************************************/
+.map img{width: 90%; height: 100%;}
 
 
-.containerP{display:grid;
-margin-left: 20%;
-grid-template-columns: 500px 500px;
-justify-content: center;
-
-}
-
-.thurthProject{margin-left: 40%; width: max-content;margin-top: 20px;}
-.clickher button{width: 15ch; height: 5ch;margin-top: 30px;}
-.description2{max-width: 220px;}
-.b1{margin-left: 30px;padding: 10px;}
-.b2{margin-left: 40px;}
-.b3{margin-left: 70px;}
-/****************************************Mobile*****************************************************/
-nav{display: flex;
-flex-direction: row;}
-
-@media screen and (max-width: 375px) 
-{
-    body{background-color: cyan;padding: 0;margin: 0;}
-    .titre{font-size:5ch; margin-left: 5ch;margin-top: 5ch;}
-    .prof{width:350px; margin-left: 8ch;margin-top: 5ch;}
-    .links a{border-style: none;}
-    header{width: 46ch;}
-    .submit{margin-left: 10ch;margin-top: 10ch;}
-   
-    footer .links{max-width: 50px;margin-top: 20px;}
-     .item1-servise{font-size: 2ch;}
-     .item1-phone{font-size: 2ch;}
-     footer{padding-bottom: 20px;}
-     .links a{border-radius: 0%;border-style: none;}
 
 
-}
-    
+
+
+
+
+
+/************************************************ Media Queries ************************************/
  
+@media(max-width:375px){
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+
+
+        /***********header***************/
+        
+        .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+/**************************skills Media Queries************************/
+
+.parentImages
+{
+    display: grid;
+    grid-template-columns: 170px 170px ;
+    justify-content: center;
+    margin-top: 40px;margin-bottom: 40px;
+    margin-left: 60px;
+}
+
+.htmlIcon{font-size:15px;margin-left:0;}
+/****************************projects Media Queries************************************/
+.divp{ display: none;display: flex;
+ flex-direction: column;margin-left: 10px;}
+.divp img{width: 39ch}
+        .div3 {margin-left: 0px;}
+        .div3 button{margin-left: 15ch;}
+        .div1 button{margin-left: 15ch;}
+        .div2 button{margin-left: 15ch;}
+		
+		.Myproject{font-size:12px;}
+		
+		
+		/**************************homme Media Queries*************************/
+		.devloper {font-size: 6ch; color: black;}
+  .profile img{width:80%;}
+  /*****************************contact Media Queries*************************************************/
+.gridContact{
+    display:flex;
+flex-direction: column;
+margin-left: 10px;
+           }
+.name{margin-left: 90px; margin-top: 25px;}
+.email{margin-left:90px;margin-top: 25px;}
+.message{margin-left: 15px;}
+.message input{width: 300px;}
+.map{margin-left: 19px;}
+}
+ 
+/**********************************MEdia Ipad*************/
+/**********************Homme Ipad*****************/
+@media(max-width:768px) and (min-width:376px){
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+    margin-bottom: 200px;
+	                   }
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+  .devloper {font-size: 6ch; color: black;}
+  .profile img{width:75%;}
+
+/*****************media project********************/
+
+
+
+
+
+
+.Myproject{display: flex;
+  justify-content: center; margin-top: 8%; font-size: 2ch;}
+  .Myproject h1{background-color: whitesmoke;}
+  
+  .div1 button{ margin-left: 30% }
+  .div2 button{margin-left: 40%}
+  .div3 button{margin-left: 55%}
+  .div3{ grid-column-start: 1; grid-column-end: 3;margin-left: 50%;}
+  
+  .divp{
+      display: grid; 
+      grid-template-columns: 40ch  10ch 40ch 40ch;
+      justify-content: center;
+      margin-left: 30%;margin-top: 10%;
+  }
+  
+  .divp img{width: 40ch;height: 35ch;}
+  .divp button{margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 20%; width: 30% ;background-color: white;color: blue;}
+  button:hover{background-color: blue;color: white;}
+  .div3 button{margin-bottom: 20ch;}
+  .div1{margin-left: 135px;}
+
+/*************************skills media******************/
+.logos{width: 50px; height: 50px;margin-top: 40px;}
+.parentImages
+{
+    display: grid;
+    grid-template-columns: 400px 300px ;
+    justify-content: center;
+    margin-top: 40px;margin-bottom: 10ch;
+    margin-left: 100px;
+
+}
+
+  .htmlIcon{font-size: 4ch;margin-left: 30px;}
+/*************************contact media******************/
+
+
+.gridContact{
+  display:flex;
+flex-direction: column;
+margin-left: 100px;
+         }
+.name{margin-left: 200px; margin-top: 40px;}
+.email{margin-left:200px;margin-top: 40px;}
+.message{margin-left: 150px;}
+.message input{width: 270px;}
+.map{margin-left: 19px;}
+
+
+}
+
+
+
+
+     

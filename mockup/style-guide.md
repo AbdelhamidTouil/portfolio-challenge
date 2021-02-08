@@ -11,15 +11,17 @@ Les designs ont été créés dans les largeurs (widths) suivantes:
 ## Colors
 
 ### Primary
+-black #000000
 
-- Définir tes couleurs ici en hsl ou bien en hexa avec le nom de chaque couleur
+- /rgb(97, 88, 88):#615858    /dodgerblue:#1E90FF        /blue:#0000FF    /lightseagreen:#20B2AA     
+  /#ffffff:white        /#92999F       /#33383B
 
 ## Typography
 
 ### Headings
 
-- Family: Mettez le lien du font utilisée avec son nom
-- Weights: mettez les weights utilisées
+- Family:   sans-serif   - Open Sans
+- Weights:normal   -   bold
 
 ### Body
 
